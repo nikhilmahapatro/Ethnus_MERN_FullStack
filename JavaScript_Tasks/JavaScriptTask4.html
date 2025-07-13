@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Instagram Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      text-align: center;
+      color: #262626;
+      font-style: italic;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+    }
+    
+    .login-button {
+      width: 100%;
+      padding: 12px;
+      background-color: #3897f0;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .login-button:hover {
+      background-color: #357ae8;
+    }
+    
+    .form-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+    
+    .remember-me {
+      font-size: 14px;
+    }
+    
+    .forgot-password {
+      font-size: 14px;
+      color: #003569;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Instagram</h1>
+    <form>
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <button type="submit" class="login-button">Log In</button>
+      <div class="form-links">
+        <label class="remember-me">
+          <input type="checkbox"> Remember me
+        </label>
+        <a href="#" class="forgot-password">Forgot password?</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

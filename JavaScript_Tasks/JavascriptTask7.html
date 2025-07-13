@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .calculator {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+        }
+        /* .input{
+            display: flex;
+            flex-direction: row;
+        } */
+        .btns {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .calculator button {
+            padding: 5px 10px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <!-- <div class="input"> -->
+            <p> <span>1st Number:</span> <input type="number" id="num1"></p>
+            <!-- <input type="number" id="num1"> -->
+            <!-- <br> -->
+            <p>2nd Number: <input type="number" id="num2"></p>
+            <!-- <input type="number" id="num2"> -->
+        <!-- </div> -->
+        <div class="btns">
+            <button onClick=multiply()> Multiply</button>
+            <button onClick=divide()> Divide</button>
+        </div>
+
+        <p >The result is:<br><span id="result"></span></p>
+        <br>
+    </div>
+    <script>
+            function multiply(){
+                var num1=parseFloat(document.getElementById('num1').value);
+                var num2=parseFloat(document.getElementById('num2').value);
+                var result=num1*num2;
+                document.getElementById('result').textContent=result;
+            }
+
+            function divide(){
+                var num1=parseFloat(document.getElementById('num1').value);
+                var num2=parseFloat(document.getElementById('num2').value);
+                var result=num1/num2;
+                document.getElementById('result').textContent=result;
+            }
+    </script>
+</body>
+
+</html

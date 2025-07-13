@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <div class="container"></div>
+    <input type="text" id="str">
+    <button onClick=sortStringAlphabetically()>Return</button>
+    <p>String in alphabetical order is:<span id="result"></span></p>
+    <script>
+        function sortStringAlphabetically() {
+            var str = document.getElementById('str').value;
+            
+            const charArray = str.split('');
+
+            const sortedArray = charArray.sort();
+
+            const sortedString = sortedArray.join('');
+
+            document.getElementById('result').textContent = sortedString;
+        }
+    </script>
+</body>
+
+</html>

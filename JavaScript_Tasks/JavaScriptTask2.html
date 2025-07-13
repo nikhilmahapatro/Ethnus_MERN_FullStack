@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Page Navigation</title>
+</head>
+<body>
+  <h1>Page 1</h1>
+  <button id="navigateButton">Next</button>
+  
+  <script>
+    const navigateButton = document.getElementById('navigateButton');
+
+    navigateButton.addEventListener('click', function() {
+      window.location.href = 'page2.html'; 
+    });
+  </script>
+</body>
+</html>
