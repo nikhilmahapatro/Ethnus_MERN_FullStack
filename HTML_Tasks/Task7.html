@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Form</title>
+  <style>
+    .container {
+      width: 400px;
+      margin: 0 auto;
+    }
+    
+    .form-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    .form-group label {
+      flex-basis: 30%;
+      flex-shrink: 0;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    
+    .form-group input[type="text"],
+    .form-group input[type="password"],
+    .form-group textarea,
+    .form-group select {
+      flex-basis: 70%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .submit-btn {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .submit-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+      </div>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="repassword">Re-enter Password:</label>
+        <input type="password" id="repassword" name="repassword" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
